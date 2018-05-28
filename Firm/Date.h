@@ -2,9 +2,9 @@
 #include"Library.h"
 
 class Date {
-	unsigned int dd;
-	unsigned int mm;
-	unsigned int yy;
+	int dd;
+	int mm;
+	int yy;
 public:
 	Date() = default;
 	Date(int dd, int mm, int yy) {
@@ -18,6 +18,7 @@ public:
 		return is;
 	}
 	friend ostream& operator<<(ostream& os, Date obj) {
-		os << setw(5) << obj.dd << setw(5) << obj.mm << setw(7) << obj.yy<< endl;
+		os << "\t" << obj.dd <<"\t" << obj.mm << "\t" << obj.yy;
+		return os;
 	}
 };

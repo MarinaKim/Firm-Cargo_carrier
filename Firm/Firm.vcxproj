@@ -117,6 +117,12 @@
     <ClInclude Include="Manager.h" />
     <ClInclude Include="Programmer.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Administrator.cpp" />
+    <ClCompile Include="Manager.cpp" />
+    <ClCompile Include="Programmer.cpp" />
+    <ClCompile Include="Source.cpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
